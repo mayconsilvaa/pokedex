@@ -1,6 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+
+    :root{
+      --background: #f0f2f5;
+      --blue: #2589ff;
+      --text-title: #363F5F;
+      --text-body: #969CB3;
+      --text-btn: #FFFFFF;
+      --bg-card: #FFFFFF;
+    }
+
+
     *{
         margin:0;
         border:0;
@@ -19,12 +30,19 @@ export const GlobalStyles = createGlobalStyle`
 
     body{
         -webkit-font-smoothing: antialiased;
+        background: var(--background);
+    }
+
+    body, input, button{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a{
+      text-decoration:none;
     }
 
     button{
         cursor: pointer;
     }
 
-
 `;
-
